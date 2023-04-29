@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div id="my-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <a class="navbar-brand" href="#">Наша компания</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#list_container">Список сотрудников</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#best_worker_container">Лучший сотрудник</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#add_worker_container">Добавить сотрудника</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="list_container" class="list_container">
+            <h1 class="list_title title text-center">Список сотрудников</h1>
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">ФИО</th>
+                        <th scope="col">Должность</th>
+                        <th scope="col">Телефон</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Иванов Иван Иванович</td>
+                        <td>Генеральный директор</td>
+                        <td>8-800-555-35-35</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Алексеев Алексей Алексеевич</td>
+                        <td>Исполнительный директор</td>
+                        <td>8-999-999-99-99</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Егоров Егор Егорович</td>
+                        <td>Начальник отдела тестирования</td>
+                        <td>8-999-999-99-99</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Данилов Данил Данилович</td>
+                        <td>Начальник отдела Front-end разработки</td>
+                        <td>8-999-999-99-99</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Арсенов Арсен Арсенович</td>
+                        <td>Начальник отдела Back-end разработки</td>
+                        <td>8-999-999-99-99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="best_worker_container" class="best_worker_container">
+            <h1 class="bw_title title text-center">Лучший сотрудник</h1>
+            <div class="card" style="width: 18rem;">
+                <img src="/back-hw5/54c859d6f7b4c5368ff1514422bd4392.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title bw_FIO">Иванов Иван Иванович</h5>
+                  <div class="card_desc">
+                    <p class="card-text bw_rank">Генеральный директор</p>
+                    <p class="card-text bw_address">г. Зарюпинск, ул. Пушкина, д. Колотушкина 69, кв. 666</p>
+                    <p class="card-text bw_phone">8-800-555-35-35</p>
+                    <p class="card-text bw_email">ivanovivan@mail.ru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="add_worker_container" class="add_worker_container">
+            <h1 class="aw_title title text-center">Добавить сотрудника</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputFIO" class="form-label">ФИО</label>
+                    <input type="text" class="form-control" id="exampleInputFIO" aria-describedby="FIOHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputRank" class="form-label">Должность</label>
+                    <input type="text" class="form-control" id="exampleInputRank" aria-describedby="RankHelp">
+                </div>  
+                <div class="mb-3">
+                    <label for="exampleInputAddress" class="form-label">Адрес</label>
+                    <input type="text" class="form-control" id="exampleInputAddress" aria-describedby="AddressHelp">
+                </div>  
+                <div class="mb-3">
+                    <label for="exampleInputPhone" class="form-label">Телефон</label>
+                    <input type="phone" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+                </div>
+                <div class="form_button text-center">
+                    <button type="submit" class="btn btn-primary">Добавить сотрудника</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

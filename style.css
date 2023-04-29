@@ -1,0 +1,19 @@
+.container {
+    margin: 60px auto;
+}
+
+.card {
+    margin: 0 auto;
+}
+
+.container>div {
+    margin-bottom: 100px;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+ul {
+    margin: 0 auto;
+}
